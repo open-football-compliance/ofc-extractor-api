@@ -1,0 +1,8 @@
+services:
+  open-ofc-api:
+    build: .
+    container_name: ofc_extractor_api
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    tty: true
